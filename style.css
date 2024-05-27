@@ -62,6 +62,7 @@ textarea{
     border-radius: 5px;
     resize: none;
     width: 37.2vw;
+    border: 1px solid rgb(75, 31, 31);
 }
 
 #Email, #cont, #Password{
@@ -76,6 +77,16 @@ textarea{
     padding: 4px;
 }
 
+button{
+    background-color: rgb(231, 210, 210);
+    font-size: 14px;
+    font-family: cute;
+    color: rgb(75, 31, 31);
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid rgb(75, 31, 31);
+}
+
 .banner{
     top: 11vh;
     padding: 15px; 
@@ -86,4 +97,8 @@ textarea{
     border-radius: 20px;
     background-color: rgb(235, 209, 209);
     z-index: -10;
+}
+
+input radio{
+    border: 1px solid pink;
 }

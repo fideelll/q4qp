@@ -39,7 +39,7 @@
         <input type="radio" id="Na" name="gen" value="na">
         <label for="mindanao">Prefer not to say</label>
 
-        <br>
+        <br><br>
 
         <label for="Password">Password:</label><br>
         <input type="password" id="Password" name="Password"onblur="blurfn3()"><br>
@@ -51,8 +51,8 @@
 
         <br>
 
-        <input type="submit" value="Submit" id="submit" onclick="submit()"> 
-       
+        <input type="submit" value="Submit" id="submit" onclick="submit()" onsubmit="submit()"> 
+        <button onclick="reset()">Reset</button>
     </form>
 
     <div class="banner"></div>
