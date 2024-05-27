@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: cute;
+    src: url(media/MADE\ Tommy\ Soft\ Medium\ PERSONAL\ USE.otf);
+}
+
+@font-face {
+    font-family: cute2;
+    src: url(media/Super\ Creamy\ Personal\ Use.ttf);
+}
+
+body{
+    font-family: cute;
+    color: rgb(75, 31, 31);
+    overflow: hidden;
+    background-color: rgb(247, 244, 244);
+    text-align: center;
+}
+
+.profiletext{
+    top: 11vh;
+    padding: 15px; 
+    width: 38vw;
+    height: 80vh;
+    position: absolute;
+    right: 30%;
+    border-radius: 20px;
+    background-color: rgb(211, 168, 168);
+}
