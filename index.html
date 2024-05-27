@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <p>Shielding Innocence</p>
+    </div>
+
+    <form class="signup">
+        <legend>Sign-up</legend>
+
+        <br>
+
+        <label for="Name">First Name:</label> 
+        <input type="name" id="Name" name="Name" onblur="blurfn1()">    
+
+        <label for="Name">Last Name:</label>
+        <input type="name" id="LName" name="Name" onblur="blurfn2()" >
+        
+        <br>
+        <br>
+ 
+        <label for="Email">Email: </label><br>
+        <input type="eMail" id="Email" name="Email" onblur="blurfn4()"><br><br>
+
+        <label for="contact">Contact # (optional)</label> <br>
+        <input type="contact" id="cont" name="cont"><br><br>    
+        
+        <p>Gender</p>
+        <input type="radio" id="Male" name="gen" value="male">
+        <label for="Male">Male</label></br>
+        <input type="radio" id="Female" name="gen" value="female">
+        <label for="Female">Female</label></br>
+        <input type="radio" id="Na" name="gen" value="na">
+        <label for="mindanao">Prefer not to say</label>
+
+        <br>
+
+        <label for="Password">Password:</label><br>
+        <input type="password" id="Password" name="Password"onblur="blurfn3()"><br>
+        
+        <br>
+
+        <label for="support">Why do you support this campaign? </label></br>
+        <textarea id="textArea" name="Interests" rows="4" cols="50" onblur="blurfn6()"></textarea>
+
+        <br>
+
+        <input type="submit" value="Submit" id="submit" onclick="submit()"> 
+       
+    </form>
+
+    <div class="banner"></div>
+    <script src="script.js"></script>
+</body>
+</html>
