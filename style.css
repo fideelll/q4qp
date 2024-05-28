@@ -97,8 +97,20 @@ button{
     border-radius: 20px;
     background-color: rgb(235, 209, 209);
     z-index: -10;
+    background-image: url(media/);
 }
 
 input radio{
     border: 1px solid pink;
+}
+
+.box{
+    position: relative;
+    height: 20vh;
+    width: 35vw;
+    left: 3.5vw;
+    top: 54vh;
+    border-radius: 5px;
+    background-color: white;
+    opacity: 70%;
 }

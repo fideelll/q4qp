@@ -21,13 +21,34 @@ body{
     text-align: center;
 }
 
+h1{
+    font-family: cute2;
+    color: rgb(75, 31, 31);
+    overflow: hidden;
+    font-size: 40px;
+    position: relative;
+    top: 3vh;
+}
+
 .profiletext{
-    top: 11vh;
+    top: 20vh;
     padding: 15px; 
-    width: 38vw;
-    height: 80vh;
+    width: 75vw;
+    height: 70vh;
     position: absolute;
-    right: 30%;
     border-radius: 20px;
+    left: 11vw;
     background-color: rgb(211, 168, 168);
+}
+
+.navbar{
+    height: 7vh;
+    text-align: left;
+    position: relative;
+    background-color: rgb(180, 118, 118);
+}
+.navbar p{
+    position: relative;
+    top: 1.7vh;
+    left: 2vw;
 }

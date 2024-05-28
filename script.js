@@ -1,63 +1,75 @@
+
+var a = document.getElementById("Name");
+var b = document.getElementById("LName");
+var c = document.getElementById("Password");
+var d = document.getElementById("Email");
+var e = document.getElementById("Gender");
+var f = document.getElementById("support");
+
 function blurfn1(){
-    var x = document.getElementById("Name");
-    if (x.value == "")
+    if (a.value == "")
     {
-        x.style.border = "2px solid red";
+        a.style.border = "2px solid red";
     }else{
-        x.style.border = "1px solid rgb(87, 51, 51)";
+        a.style.border = "1px solid rgb(87, 51, 51)";
     }
 } 
 
 function blurfn2(){
-    var x = document.getElementById("LName");
-    if (x.value == "")
+    if (b.value == "")
     {
-        x.style.border = "2px solid red";
+        b.style.border = "2px solid red";
     }else{
-        x.style.border = "1px solid rgb(87, 51, 51)";
+        b.style.border = "1px solid rgb(87, 51, 51)";
     }
 } 
 
 function blurfn3(){
-    var x = document.getElementById("Password");
-    if (x.value == "")
+    if (c.value == "")
     {
-        x.style.border = "2px solid red";
+        c.style.border = "2px solid red";
     }else{
-        x.style.border = "1px solid rgb(87, 51, 51)";
+        c.style.border = "1px solid rgb(87, 51, 51)";
     }
 } 
 
 function blurfn4(){
-    var x = document.getElementById("Email");
-    if (x.value == "")
+    if (d.value == "")
     {
-        x.style.border = "2px solid red";
+        d.style.border = "2px solid red";
     }else{
-        x.style.border = "1px solid rgb(87, 51, 51)";
+        d.style.border = "1px solid rgb(87, 51, 51)";
     }
 } 
 
 function blurfn5(){
-    var x = document.getElementById("Gender");
-    if (x.value == "")
+    if (e.value == "")
     {
-        x.style.border = "2px solid red";
+        e.style.border = "2px solid red";
     }else{
-        x.style.border = "1px solid rgb(87, 51, 51)";
+        e.style.border = "1px solid rgb(87, 51, 51)";
     }
 } 
 
 function blurfn6(){
-    var x = document.getElementById("support");
-    if (x.value == "")
+    if (f.value == "")
     {
-        x.style.border = "2px solid red";
+        f.style.border = "2px solid red";
     }else{
-        x.style.border = "1px solid rgb(87, 51, 51)";
+        f.style.border = "1px solid rgb(87, 51, 51)";
     }
 } 
 
 function submit(){
     window.location.replace("profile.html");
+    var fn=document.getElementById("Name").value;
+    var ln=document.getElementById("LName").value;
+    var sx=document.getElementById("Email").value;
+    var em=document.getElementById("cont").value;
+    var rs=document.getElementById("reason").value;
+    localStorage.setItem('firstname', fn);
+    localStorage.setItem('lastname', ln);
+    localStorage.setItem('sex', sx);
+    localStorage.setItem('email', em);
+    localStorage.setItem('reason', rs);
 }
