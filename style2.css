@@ -27,17 +27,18 @@ h1{
     overflow: hidden;
     font-size: 40px;
     position: relative;
-    top: 3vh;
+    
 }
 
+
 .profiletext{
-    top: 20vh;
+    top: 2vh;
     padding: 15px; 
-    width: 75vw;
-    height: 70vh;
-    position: absolute;
+    width: 20vw;
+    height: 80vh;
+    position: relative;
     border-radius: 20px;
-    left: 11vw;
+    left: 2vw;
     background-color: rgb(211, 168, 168);
 }
 
@@ -51,4 +52,60 @@ h1{
     position: relative;
     top: 1.7vh;
     left: 2vw;
+}
+
+/*section 1 intiative*/
+#WWD-init{
+    margin-top: 10vh;
+    padding-left: 50px;
+    position: absolute;
+}
+
+#WWD-init h2{
+    font-size: 50px;
+}
+#WWD-init p{
+    font-size: 20px;
+}
+#WWD-init .wrapper{
+    margin-left: 23vw;
+  
+}
+#WWD-init .section-title{
+    font-size: 60px;
+  }
+
+#WWD-init img{
+    float: right;
+    height: 200px; width: auto;
+    padding: 5px;
+    margin-right:50px;
+}
+
+#WWD-init img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    
+}
+
+.highlight{
+    display: inline-block;
+    padding: 15px 20px;
+  background-color: white;
+    background-size: cover;
+    text-decoration: none;
+    margin-top: 50px;
+   text-align: center;
+   color: black;
+   border: 2px solid black;
+   transition-duration: 500ms;   
+   box-shadow: black 5px 10px;
+}
+
+.highlight:hover{
+    background-color: black;  
+    transition-duration: 500ms;   
+    transform: scale(1.5);
+    color: white;   
+    box-shadow: white 5px 10px;
 }

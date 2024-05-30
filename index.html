@@ -11,16 +11,16 @@
         <p>Shielding Innocence</p>
     </div>
 
-    <form class="signup"  action="profile.html">
+    <form id="signup"  action="profile.html" onsubmit="submit()">
         <legend>Sign-up</legend>
 
         <br>
 
         <label for="Name">First Name:</label> 
-        <input type="name" id="Name" name="Name" onblur="blurfn1()" required>    
+        <input type="text" id="FName" name="FName" onblur="blurfn1()" required>    
 
         <label for="Name">Last Name:</label>
-        <input type="name" id="LName" name="Name" onblur="blurfn2()" required>
+        <input type="text" id="LName" name="Name" onblur="blurfn2()" required>
         
         <br>
         <br>
@@ -29,15 +29,16 @@
         <input type="eMail" id="Email" name="Email" onblur="blurfn4()" required><br><br>
 
         <label for="contact">Contact # (optional)</label> <br>
-        <input type="contact" id="cont" name="cont"><br><br>    
+        <input type="text" id="cont" name="cont"><br><br>    
         
     
         <p>Gender</p>
-        <input type="radio" id="Male" name="gen" value="male">
+     
+        <input type="radio" name="gen" value="male">
         <label for="Male">Male</label></br>
-        <input type="radio" id="Female" name="gen" value="female">
+        <input type="radio" name="gen" value="female">
         <label for="Female">Female</label></br>
-        <input type="radio" id="Na" name="gen" value="na" required>
+        <input type="radio" name="gen" value="na" required>
         <label for="mindanao">Prefer not to say</label>
 
         <br><br>
@@ -47,17 +48,27 @@
         
         <br>
 
-        <label for="support">Why do you support this campaign? </label></br>
-        <textarea id="textArea" name="Interests" rows="4" cols="50" onblur="blurfn6()" required></textarea>
+        <label for="textArea">Why do you support this campaign? </label></br>
+        <textarea id="textArea" name="textArea" rows="4" cols="50" onblur="blurfn6()" required></textarea>
 
         <br>
 
-        <input type="submit" value="Submit" id="submit" onclick="submit()" onsubmit="submit()"> 
+        <input type="submit" value="Submit" id="submit" onclick="submit()" > 
         
     </form>
 
     <div class="banner">
-        <div class="box"></div>
+       
+        <div id="video1">  <video id="video" autoplay muted loop playsinline width="100%"> 
+            <source src="media/6482121-sd_960_540_25fps.mp4" type="video/mp4">
+        </video></div>
+
+        <div class="box">
+                
+            <p>Welcome to Shielding a dedicated platform committed to the battle against pedophilia. Our mission is to protect children, support survivors, and educate the public about the dangers and signs of child sexual abuse. We believe that every child deserves to grow up in a safe and nurturing environment, free from the fear and trauma of sexual exploitation.</p>
+        </div>
+      
+      
     </div>
     <script src="script.js"></script>
 </body>

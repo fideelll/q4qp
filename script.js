@@ -61,15 +61,16 @@ function blurfn6(){
 } 
 
 function submit(){
-    window.location.replace("profile.html");
-    var fn=document.getElementById("Name").value;
+    window.location.href("profile.html");
+    var fn=document.getElementById("FName").value;
     var ln=document.getElementById("LName").value;
-    var sx=document.getElementById("Email").value;
-    var em=document.getElementById("cont").value;
-    var rs=document.getElementById("reason").value;
+    var sx=document.querySelector('input[name="genderS"]:checked').value;
+    var em=document.getElementById("Email").value;
+    var tx=document.getElementById("textArea").value;
+    
     localStorage.setItem('firstname', fn);
     localStorage.setItem('lastname', ln);
-    localStorage.setItem('sex', sx);
+    localStorage.setItem('gndr', sx);
     localStorage.setItem('email', em);
-    localStorage.setItem('reason', rs);
+    localStorage.setItem('text', tx);
 }
