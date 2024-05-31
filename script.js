@@ -64,13 +64,22 @@ function submit(){
     window.location.href("profile.html");
     var fn=document.getElementById("FName").value;
     var ln=document.getElementById("LName").value;
-    var sx=document.querySelector('input[name="genderS"]:checked').value;
     var em=document.getElementById("Email").value;
-    var tx=document.getElementById("textArea").value;
+    var tx=document.getElementById("textAreaa").value;
     
     localStorage.setItem('firstname', fn);
     localStorage.setItem('lastname', ln);
-    localStorage.setItem('gndr', sx);
     localStorage.setItem('email', em);
     localStorage.setItem('text', tx);
+
+    if(document.getElementById("Female").checked){
+        var gndr="Female";
+        localStorage.setItem('gender', gndr);
+    }else if(document.getElementById("Male").checked){
+        var gndr="Male";
+        localStorage.setItem('gender', gndr);
+    }else{
+        var gndr="Prefer not to say";
+        localStorage.setItem('gender', gndr);
+    }
 }
